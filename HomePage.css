@@ -1,0 +1,176 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Style the main header */
+.main-header {
+    background-color: #007bff;  
+    /* background-color: #333; */
+    color: #fff; /* Customize the text color */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Style the logo */
+.logo img {
+   
+    max-width: 40px; /* Set a maximum width for your logo */
+    height: auto;
+    margin-left: 20px; /* Add spacing from the left */
+    border-radius: 50%;
+}
+
+/* Style the search bar */
+.search-bar {
+    margin-right: 300px; /* Add spacing from the right */
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px; /* Add spacing between input and button */
+    font-size: 16px;
+    width: 600px;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #ff5733; /* Customize the button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #d63e11; /* Customize the hover color */
+}
+
+/* header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+} */
+
+header h1 {
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+.featured-products {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+/* Style the product container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Style the product image */
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the product details */
+.product-details {
+    /* flex: 1;
+    padding: 0 20px; */
+    flex: 0 0 calc(25% - 10px); /* Each item takes up 25% of the container width with a little spacing */
+    margin-bottom: 20px; /* Optional: Add margin for spacing between rows */
+    box-sizing: border-box;
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-details:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #ff5733; /* Customize the color to match your brand */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.add-to-cart-button {
+    background-color: #007bff; /* Customize the button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3; /* Customize the hover color */
+}
